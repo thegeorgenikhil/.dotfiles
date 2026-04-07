@@ -1,0 +1,48 @@
+# ── Font ──────────────────────────────────────────────────────────────────────
+font-family = Monaco
+font-size = 21
+font-thicken = true
+
+# ── Window ────────────────────────────────────────────────────────────────────
+maximize = true
+macos-titlebar-style = tabs
+window-padding-x = 8
+window-padding-y = 4
+window-padding-balance = true
+
+# ── Background ────────────────────────────────────────────────────────────────
+# background-opacity = 0.16
+# background-blur = 90
+
+# ── Cursor ────────────────────────────────────────────────────────────────────
+cursor-style = bar
+
+# ── Cell ──────────────────────────────────────────────────────────────────────
+adjust-cell-height = 20%
+
+# ── Colors ────────────────────────────────────────────────────────────────────
+# Adapted from Warp Terminal's warp-dark theme
+# https://github.com/warpdotdev/themes/blob/main/warp_bundled/warp_dark.yaml
+
+background = #000000
+foreground = #ffffff
+
+# Normal colors (0-7)
+palette = 0=#616161
+palette = 1=#ff8272
+palette = 2=#b4fa72
+palette = 3=#fefdc2
+palette = 4=#a5d5fe
+palette = 5=#ff8ffd
+palette = 6=#d0d1fe
+palette = 7=#f1f1f1
+
+# Bright colors (8-15)
+palette = 8=#8e8e8e
+palette = 9=#ffc4bd
+palette = 10=#d6fcb9
+palette = 11=#fefdd5
+palette = 12=#c1e3fe
+palette = 13=#ffb1fe
+palette = 14=#e5e6fe
+palette = 15=#feffff
