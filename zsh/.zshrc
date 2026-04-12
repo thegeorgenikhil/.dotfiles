@@ -6,7 +6,14 @@ fi
 # =============================================================================
 # Environment Variables
 # =============================================================================
-export PATH="$HOME/.local/bin:$PATH"
+typeset -U path PATH
+
+path=(
+  "$HOME/.local/bin"
+  "/opt/homebrew/opt/python@3.14/bin"
+  $path
+)
+
 export EDITOR=vim
 export VISUAL=vim
 
@@ -82,9 +89,8 @@ export FZF_DEFAULT_OPTS="
 # Git
 alias gs='git status'
 
-# Clickhouse
-alias ch-start='clickhouse server --config-file ~/.clickhouse/config.xml --daemon --pid-file ~/.clickhouse/clickhouse-server.pid'
-alias ch-stop='clickhouse stop --pid-path ~/.clickhouse/'
+# Work aliases (loaded from separate file - not committed to git)
+[[ -f ${0:A:h}/.work_aliases.zsh ]] && source ${0:A:h}/.work_aliases.zsh
 
 # Use xterm-256color when SSHing to avoid unknown terminal type errors
 alias ssh='TERM=xterm-256color ssh'
