@@ -96,7 +96,7 @@ alias cd='z'
 alias gs='git status'
 
 # Work aliases (loaded from separate file - not committed to git)
-[[ -f ${0:A:h}/.work_aliases.zsh ]] && source ${0:A:h}/.work_aliases.zsh
+[[ -f $HOME/.work_aliases.zsh ]] && source $HOME/.work_aliases.zsh
 
 # Use xterm-256color when SSHing to avoid unknown terminal type errors
 alias ssh='TERM=xterm-256color ssh'
