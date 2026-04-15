@@ -81,8 +81,14 @@ setopt HIST_IGNORE_SPACE      # don't save commands prefixed with a space
 # =============================================================================
 autoload -U compinit && compinit
 
-# Case insensitive tab completion
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# Case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
+# Bridge completions from other shells when carapace lacks native support
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
+zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
+
+source <(carapace _carapace)
 
 # pnpm completion
 _cached_eval "pnpm-completion" "pnpm completion zsh"
