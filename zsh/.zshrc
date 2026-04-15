@@ -11,11 +11,15 @@ typeset -U path PATH
 path=(
   "$HOME/.local/bin"
   "/opt/homebrew/opt/python@3.14/bin"
+  "/opt/homebrew/opt/openjdk@17/bin"
+  "$HOME/.rbenv/bin"
   $path
 )
 
 export EDITOR=vim
 export VISUAL=vim
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
 
 # =============================================================================
 # Package Managers
@@ -32,6 +36,9 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# rbenv
+eval "$(rbenv init - zsh)"
 
 # =============================================================================
 # Powerlevel10k Theme
