@@ -81,11 +81,16 @@ setopt HIST_IGNORE_SPACE      # don't save commands prefixed with a space
 # =============================================================================
 autoload -U compinit && compinit
 
+# Bridge completions from other shells when carapace lacks native support
+export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
+
 # Case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# Bridge completions from other shells when carapace lacks native support
-export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense'
+# Highlight and cycle through completions with arrow keys
+zstyle ':completion:*' menu select
+
+# Group commands by category for git
 zstyle ':completion:*:git:*' group-order 'main commands' 'alias commands' 'external commands'
 
 source <(carapace _carapace)
