@@ -5,6 +5,20 @@ fi
 
 HOMEBREW_PREFIX="/opt/homebrew"
 
+# Helper function to cache the output of expensive eval commands.
+# It stores the result in ~/.cache/zsh/<name>.zsh and only regenerates
+# the cache if the file does not exist or is older than 7 days (604800 seconds).
+# Usage: _cached_eval <cache_name> <command to eval>
+_cached_eval() {
+  local name=$1; shift
+  local cache="$HOME/.cache/zsh/${name}.zsh"
+  mkdir -p "$HOME/.cache/zsh"
+  if [[ ! -f "$cache" ]] || (( $(date +%s) - $(stat -f%m "$cache") > 604800 )); then
+    eval "$@" > "$cache"
+  fi
+  source "$cache"
+}
+
 # =============================================================================
 # Environment Variables
 # =============================================================================
@@ -46,7 +60,7 @@ case ":$PATH:" in
 esac
 
 # rbenv
-eval "$(rbenv init - zsh)"
+_cached_eval "rbenv" "rbenv init - zsh"
 
 # =============================================================================
 # Powerlevel10k Theme
@@ -71,7 +85,7 @@ autoload -U compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # pnpm completion
-eval "$(pnpm completion zsh)"
+_cached_eval "pnpm-completion" "pnpm completion zsh"
 
 # =============================================================================
 # Plugins
