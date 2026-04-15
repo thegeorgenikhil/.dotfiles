@@ -131,8 +131,10 @@ eval "$(zoxide init zsh)"
 # Aliases
 # =============================================================================
 
-# Git
+# zoxide
 alias cd='z'
+
+# Git
 alias gs='git status'
 
 # Work aliases (loaded from separate file - not committed to git)
