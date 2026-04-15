@@ -3,6 +3,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+HOMEBREW_PREFIX="/opt/homebrew"
+
 # =============================================================================
 # Environment Variables
 # =============================================================================
@@ -49,7 +51,7 @@ eval "$(rbenv init - zsh)"
 # =============================================================================
 # Powerlevel10k Theme
 # =============================================================================
-source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+source $HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # =============================================================================
 # History
@@ -76,8 +78,8 @@ eval "$(pnpm completion zsh)"
 # =============================================================================
 
 # Note: syntax-highlighting must come before autosuggestions
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Up/down arrows search history based on what's already typed
 bindkey '^[[A' history-search-backward
