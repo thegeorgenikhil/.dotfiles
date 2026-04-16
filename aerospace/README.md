@@ -1,4 +1,8 @@
-# Enabled Workspaces
+# AeroSpace Configuration
+
+This is the AeroSpace configuration for my macOS setup.
+
+## Enabled Workspaces
 
 - 1
 - 2
@@ -10,7 +14,7 @@
 - P
 - T
 
-# Most Used Keybindings
+## Most Used Keybindings
 
 | Keybinding                          | Action                                                     |
 | ----------------------------------- | ---------------------------------------------------------- |
@@ -28,13 +32,18 @@
 | `service mode → f`                  | Toggle focused window floating / tiling                    |
 | `service mode → esc`                | Reload config and exit service mode                        |
 
-# Custom Keybindings
+> **Note:** `alt + shift + g`, `m`, and `t` will launch Ghostty, Spotify, and Telegram.
 
-| Keybinding | Action                              |
-| ---------- | ----------------------------------- |
-| `alt + f`  | Toggle focused window to fullscreen |
+## Custom Keybindings
 
-# Automatic Window → Workspace Assignment
+| Keybinding        | Action                              |
+| ----------------- | ----------------------------------- |
+| `alt + f`         | Toggle focused window to fullscreen |
+| `alt + shift + g` | Launch Ghostty app                  |
+| `alt + shift + m` | Launch Spotify app                  |
+| `alt + shift + t` | Launch Telegram app                 |
+
+## Automatic Window → Workspace Assignment
 
 The following applications are assigned to specific workspaces upon launch:
 
