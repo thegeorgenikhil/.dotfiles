@@ -231,6 +231,9 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
+    
+    # [CUSTOM] See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
+    alt-f = 'fullscreen'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
