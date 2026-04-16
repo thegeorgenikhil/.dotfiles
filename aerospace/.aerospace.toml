@@ -231,9 +231,18 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
-    
+
     # [CUSTOM] See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
     alt-f = 'fullscreen'
+
+    # Fix Ghostty's tab issue
+    # See: https://ghostty.org/docs/help/macos-tiling-wms#workarounds
+    [[on-window-detected]]
+    if.app-id="com.mitchellh.ghostty"
+    run= [
+    "layout floating",
+    ]
+
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
