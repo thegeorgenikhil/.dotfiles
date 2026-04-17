@@ -110,6 +110,11 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
+# Edit long commands in vim with Ctrl-X Ctrl-E
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
 # =============================================================================
 # FZF - Fuzzy Finder
 # =============================================================================
