@@ -54,3 +54,23 @@ The following applications are assigned to specific workspaces upon launch:
 | Ghostty        | G         |
 | Spotify        | M         |
 | Telegram       | T         |
+
+## Workspace → Monitor Assignment
+
+Workspaces are pinned to dedicated monitors in a dual-display setup, giving each screen a consistent purpose — the external monitor for coding and browsing, the laptop screen for media and personal use.
+
+Run `aerospace list-monitors` to get the exact monitor names to use in the config.
+
+| Workspace | Monitor                 | Typical Use         |
+| --------- | ----------------------- | ------------------- |
+| 1         | DELL P2422HE            | Chrome              |
+| 2         | DELL P2422HE            | Chrome              |
+| 3         | DELL P2422HE            | Chrome              |
+| E         | DELL P2422HE            | Editor (Cursor/Zed) |
+| G         | DELL P2422HE            | Ghostty             |
+| O         | DELL P2422HE            | Scratch             |
+| T         | DELL P2422HE            | Telegram            |
+| M         | Built-in Retina Display | Spotify             |
+| P         | Built-in Retina Display | Personal            |
+
+> **Note:** When only the built-in display is connected, AeroSpace falls back and shows all workspaces on that single monitor.
