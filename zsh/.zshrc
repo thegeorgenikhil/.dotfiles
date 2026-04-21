@@ -41,16 +41,21 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 # Package Managers
 # =============================================================================
 
-# Lazy-load NVM
+# NVM - Node Version Manager
 export NVM_DIR="$HOME/.nvm"
-lazy_load_nvm() {
-  unset -f nvm node npm npx
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-}
-for cmd in nvm node npm npx; do
-  eval "${cmd}() { lazy_load_nvm; ${cmd} \$@; }"
-done
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # loads nvm bash_completion
+
+# Lazy-load NVM
+# export NVM_DIR="$HOME/.nvm"
+# lazy_load_nvm() {
+#   unset -f nvm node npm npx
+#   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# }
+# for cmd in nvm node npm npx; do
+#   eval "${cmd}() { lazy_load_nvm; ${cmd} \$@; }"
+# done
 
 # pnpm
 export PNPM_HOME="/Users/thegeorgenikhil/Library/pnpm"
