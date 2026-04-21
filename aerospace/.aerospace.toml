@@ -295,3 +295,15 @@ if.app-id="ru.keepcoder.Telegram"
 run= [
     "move-node-to-workspace T",
 ]
+
+# [CUSTOM] Assign workspaces to specific monitors
+[workspace-to-monitor-force-assignment]
+1 = 'DELL P2422HE'
+2 = 'DELL P2422HE'
+3 = 'DELL P2422HE'
+E = 'DELL P2422HE'
+G = 'DELL P2422HE'
+M = 'Built-in Retina Display'
+O = 'DELL P2422HE'
+P = 'Built-in Retina Display'
+T = 'DELL P2422HE'
