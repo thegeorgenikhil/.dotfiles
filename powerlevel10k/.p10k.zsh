@@ -38,21 +38,31 @@
   [[ $ZSH_VERSION == (5.<1->*|<6->.*) ]] || return
 
   # Prompt colors.
-  # local grey='242'
-  # local red='1'
-  # local yellow='3'
-  # local blue='4'
-  # local magenta='5'
-  # local cyan='6'
-  # local white='7'
+  # These are ANSI palette *indices* (0-15), not hex codes, so the actual
+  # colors are resolved by the terminal from its own palette. The single
+  # source of truth lives in ghostty/.config/ghostty/config.ghostty — change a
+  # `palette = N=#...` line there and this prompt follows automatically. As a
+  # bonus, the prompt adapts to whatever theme the pane is showing (e.g. the
+  # Deep Purple remote theme set by _ghostty_remote_on in .zshrc).
+  # Normal colors (ghostty palette 0-7)
+  local grey='0'
+  local red='1'
+  local green='2'
+  local yellow='3'
+  local blue='4'
+  local magenta='5'
+  local cyan='6'
+  local white='7'
 
-  local grey='#616161'
-  local red='#ff8272'
-  local yellow='#fefdc2'
-  local blue='#a5d5fe'
-  local magenta='#ff8ffd'
-  local cyan='#d0d1fe'
-  local white='#f1f1f1'
+  # Bright colors (ghostty palette 8-15)
+  local bright_grey='8'
+  local bright_red='9'
+  local bright_green='10'
+  local bright_yellow='11'
+  local bright_blue='12'
+  local bright_magenta='13'
+  local bright_cyan='14'
+  local bright_white='15'
 
 
   # Left prompt segments.
