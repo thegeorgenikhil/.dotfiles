@@ -153,8 +153,37 @@ alias jj='zi'
 # Work aliases (loaded from separate file - not committed to git)
 [[ -f $HOME/.work_aliases.zsh ]] && source $HOME/.work_aliases.zsh
 
-# Use xterm-256color when SSHing to avoid unknown terminal type errors
-alias ssh='TERM=xterm-256color ssh'
+# ── Remote-session theme ─────────────────────────────────────────────────────
+# While connected to a remote machine, flip the Ghostty pane into a Deep Purple
+# theme so it's unmistakable we're not on the local box, then reset to the
+# configured dark theme on exit. Only recolors in Ghostty; resets via OSC
+# 110/111/104 so it always tracks whatever config.ghostty defines.
+# Used by the ssh wrapper below and the ssm-connect wrapper in .work_aliases.zsh.
+_ghostty_remote_on() {
+  [[ "$TERM_PROGRAM" == "ghostty" ]] || return 0
+  printf '\033]10;#e6dcff\007'   # foreground (pale lavender)
+  printf '\033]11;#1e0a2e\007'   # background (deep purple)
+  # 16 ANSI colors (Deep Purple)
+  printf '\033]4;0;#3b2a4d;1;#ff6188;2;#a9dc76;3;#ffd866;4;#78a9ff;5;#c792ea;6;#78dce8;7;#e6dcff;8;#6b5b8a;9;#ff8aa8;10;#bde896;11;#ffe48a;12;#9cc0ff;13;#dab6f5;14;#9ae6ef;15;#ffffff\007'
+}
+_ghostty_remote_off() {
+  [[ "$TERM_PROGRAM" == "ghostty" ]] || return 0
+  printf '\033]110\007'   # reset foreground to config default
+  printf '\033]111\007'   # reset background to config default
+  printf '\033]104\007'   # reset all 16 palette colors to config defaults
+}
+
+# ssh: force xterm-256color (avoids unknown-terminal errors) + remote theme.
+# The `always` block guarantees the theme resets even when the session is ended
+# with Ctrl-C, which otherwise aborts the function before the reset would run.
+ssh() {
+  _ghostty_remote_on
+  {
+    TERM=xterm-256color command ssh "$@"
+  } always {
+    _ghostty_remote_off
+  }
+}
 
 # =============================================================================
 # Zoxide - smarter cd
