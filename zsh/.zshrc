@@ -133,25 +133,32 @@ export FZF_DEFAULT_OPTS="
 "
 
 # =============================================================================
-# Zoxide - smarter cd
-# =============================================================================
-eval "$(zoxide init zsh)"
-
-# =============================================================================
 # Aliases
 # =============================================================================
 
-# zoxide
-alias cd='z'
+# Claude Code
+alias cc='claude'
 
 # Git
 alias gs='git status'
 
+# Hunk - TUI Git Diff Viewer
+alias h='hunk'
+
+# Zoxide
+alias j='z'
+alias jj='zi'
+ 
 # Work aliases (loaded from separate file - not committed to git)
 [[ -f $HOME/.work_aliases.zsh ]] && source $HOME/.work_aliases.zsh
 
 # Use xterm-256color when SSHing to avoid unknown terminal type errors
 alias ssh='TERM=xterm-256color ssh'
+
+# =============================================================================
+# Zoxide - smarter cd
+# =============================================================================
+eval "$(zoxide init zsh)"
 
 # =============================================================================
 # Powerlevel10k Config — Must stay at the very bottom of ~/.zshrc.
