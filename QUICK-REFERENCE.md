@@ -62,6 +62,48 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 
 ---
 
+## Mouseless
+
+> Default keybindings (macOS). Press `Tab` while the overlay is up to edit the config.
+
+### Modes & overlay
+
+| Keybinding            | Action                                  |
+| --------------------- | --------------------------------------- |
+| `⌘ Left` (tap)        | Show overlay                            |
+| `Esc`                 | Hide overlay / close UI element         |
+| `Option Left` (tap)   | Toggle free mode (relative movement)    |
+| `Tab` (overlay up)    | Edit config                             |
+| `Shift Left` / `Shift Right` (overlay up) | Move overlay to prev / next monitor |
+
+### Overlay mode (clicking)
+
+| Keybinding                       | Action                                    |
+| -------------------------------- | ----------------------------------------- |
+| Type 2 cell chars, then `Space`  | Click at cell center                      |
+| Type 2 cell chars, then subgrid char | Click at sub-cell                     |
+| `Space` (during selection)       | Click at virtual cursor                   |
+| `Backspace`                      | Undo last key (go back one level)         |
+| Hold `Shift` (or `⌘ Right`) + final key | Right click                        |
+| Repeat final key                 | Double / triple click                     |
+| Hold `Option Left` (`⌘ Left`) + final key | Begin click-and-drag             |
+| `Option Left` (tap, overlay up)  | Move cursor (no click)                    |
+
+### Free mode (relative movement)
+
+| Keybinding              | Action                                            |
+| ----------------------- | ------------------------------------------------- |
+| `I` / `K` / `J` / `L`   | Move up / down / left / right                     |
+| `Space`                 | Left click                                        |
+| `R` / `E`               | Right click / middle click                        |
+| `Q` / `W`               | Back / forward click                              |
+| `M` / `,`               | Scroll up / down                                  |
+| `.` / `/`               | Scroll left / right                               |
+| `S` / `D` / `F` (hold)  | Increase movement / scroll speed (stack for more) |
+| `A` (hold)              | Decrease speed                                    |
+
+---
+
 ## Ghostty
 
 | Keybinding              | Action                          |
