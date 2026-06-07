@@ -29,6 +29,7 @@ path=(
   "/opt/homebrew/opt/python@3.14/bin"
   "/opt/homebrew/opt/openjdk@17/bin"
   "$HOME/.rbenv/bin"
+  "/opt/homebrew/opt/postgresql@18/bin"
   $path
 )
 
