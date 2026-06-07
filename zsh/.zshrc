@@ -150,7 +150,7 @@ alias h='hunk'
 alias j='z'
 alias jj='zi'
  
-# Work aliases (loaded from separate file - not committed to git)
+# Work aliases (separate file, committed encrypted via git-crypt; run `git-crypt unlock` after cloning)
 [[ -f $HOME/.work_aliases.zsh ]] && source $HOME/.work_aliases.zsh
 
 # ── Remote-session theme ─────────────────────────────────────────────────────
