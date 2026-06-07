@@ -207,7 +207,7 @@ on-mode-changed = []
     # alt-shift-d = 'move-node-to-workspace D'
     alt-shift-e = 'move-node-to-workspace E'
     # alt-shift-f = 'move-node-to-workspace F'
-    alt-shift-g = 'exec-and-forget open -a /Applications/Ghostty.app'
+    alt-shift-g = 'move-node-to-workspace G'
     # alt-shift-i = 'move-node-to-workspace I'
     alt-shift-m = 'exec-and-forget open -a /Applications/Spotify.app'
     # alt-shift-n = 'move-node-to-workspace N'
@@ -300,7 +300,7 @@ run= [
 [workspace-to-monitor-force-assignment]
 1 = 'DELL P2422HE'
 2 = 'DELL P2422HE'
-3 = 'DELL P2422HE'
+3 = 'Built-in Retina Display'
 E = 'DELL P2422HE'
 G = 'DELL P2422HE'
 M = 'Built-in Retina Display'
