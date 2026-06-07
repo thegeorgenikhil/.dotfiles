@@ -32,14 +32,13 @@ This is the AeroSpace configuration for my macOS setup.
 | `service mode → f`                  | Toggle focused window floating / tiling                    |
 | `service mode → esc`                | Reload config and exit service mode                        |
 
-> **Note:** `alt + shift + g`, `m`, and `t` will launch Ghostty, Spotify, and Telegram.
+> **Note:** `alt + shift + m` and `t` will launch Spotify and Telegram.
 
 ## Custom Keybindings
 
 | Keybinding        | Action                              |
 | ----------------- | ----------------------------------- |
 | `alt + f`         | Toggle focused window to fullscreen |
-| `alt + shift + g` | Launch Ghostty app                  |
 | `alt + shift + m` | Launch Spotify app                  |
 | `alt + shift + t` | Launch Telegram app                 |
 
@@ -65,7 +64,7 @@ Run `aerospace list-monitors` to get the exact monitor names to use in the confi
 | --------- | ----------------------- | ------------------- |
 | 1         | DELL P2422HE            | Chrome              |
 | 2         | DELL P2422HE            | Chrome              |
-| 3         | DELL P2422HE            | Chrome              |
+| 3         | Built-in Retina Display | Chrome              |
 | E         | DELL P2422HE            | Editor (Cursor/Zed) |
 | G         | DELL P2422HE            | Ghostty             |
 | O         | DELL P2422HE            | Scratch             |
