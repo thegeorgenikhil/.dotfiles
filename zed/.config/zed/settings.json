@@ -1,0 +1,117 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "new_window",
+  "diff_view_style": "unified",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-6",
+      "enable_thinking": true,
+      "effort": "high",
+    },
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "when_closing_with_no_tabs": "close_window",
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["tsgo", "vtsls"],
+    },
+    "TSX": {
+      "language_servers": ["tsgo", "vtsls"],
+    },
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "edit_predictions": {
+    "codestral": {
+      "model": "codestral-latest",
+    },
+    "allow_data_collection": "no",
+    "disabled_globs": [".env"],
+    "provider": "zed",
+  },
+  "buffer_font_family": "Menlo",
+  "minimap": {
+    "show": "never",
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000,
+    },
+  },
+  "file_types": {
+    "javascript": ["*.js", "*.js"],
+    "javascriptreact": ["*.jsx", "*.jsx"],
+    "html": ["*.tmpl", "*.html", "*.tmpl", "*.html"],
+    "gohtml": ["*.gohtml", "*.gohtml"],
+    "css": ["*.css", "*.css"],
+  },
+  "show_edit_predictions": true,
+  "terminal": {
+    "font_size": 17.0,
+    "font_family": "Monaco",
+  },
+  "cursor_shape": "bar",
+  "ui_font_family": ".ZedSans",
+  "buffer_font_weight": 400.0,
+  "helix_mode": false,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "VSCode Icons for Zed (Dark)",
+    "dark": "VSCode Icons for Zed (Dark)",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 15.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "VSCode Dark Modern",
+  },
+}
