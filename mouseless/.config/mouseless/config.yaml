@@ -1,13 +1,14 @@
-app_version: 1.0.0-preview.1
+app_version: 1.0.0-preview.4
 behavior_configs:
 - base_move_speed: 5.0
   base_wheel_speed: 16.0
-  free_mode_auto_off_s: 10
+  free_mode_auto_off_s: 0
   grid_action_level: subgrid
   hide_cursor_on_click: false
   hide_location: bottom_left
   initial_action_location: system_cursor
   initial_overlay_monitor: with_mouse
+  mouse_value_cycle_behavior: once
   move_duration_ms: 100
   move_real_cursor_with_virtual: false
   move_speed_multiplier: 3.0
@@ -31,7 +32,7 @@ event_tap_location: hid_head
 general_settings:
   automatically_check_for_updates: true
   check_for_preview_releases: true
-  hide_welcome_screen: true
+  hide_welcome_screen: false
   ignore_update_to_version: null
 grid_configs:
 - always_show_subgrid: false
@@ -60,8 +61,8 @@ grid_configs:
   - 3
   subgrid_mouse_action_keys: QWER UIOP ASDF JKL; ZXCV M,./
 keyboard_layout:
-  id: com.apple.keylayout.ABC
-  name: ABC
+  id: com.apple.keylayout.US
+  name: U.S.
   vk_to_char:
     0:
     - a
@@ -277,7 +278,7 @@ keyboard_layout:
 keymaps:
 - entries:
     back click: null
-    back mouse button: W
+    back mouse button: Q
     back mouse button (w/o overlay): null
     clear keyboard state: null
     close UI element: Escape
@@ -295,13 +296,14 @@ keymaps:
     exit free mode: Escape
     force overlay resize: null
     forward click: null
-    forward mouse button: Q
+    forward mouse button: W
     forward mouse button (w/o overlay): null
     hide overlay: Escape
     hold for back button: null
     hold for drag: CommandLeft
     hold for forward button: null
-    hold for middle button: OptionRight
+    hold for free mode: null
+    hold for middle button: null
     hold for move: OptionLeft
     hold for right button: CommandRight
     hold for speed decrease: A
@@ -369,16 +371,17 @@ keymaps:
     wheel up fast: null
   name: mac
 log_level: info
-monitor_assignment_mode: single
+mac_hud_window_level: 1001
+monitor_assignment_mode: auto
 mouse_scaling: auto
 mouse_screen_offset_scaling: auto
 name: ''
 overlay_scaling: auto
 style_configs:
 - always_on_subgrid_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.2
   background_colors:
   - - 0.49
@@ -398,15 +401,16 @@ style_configs:
     - 0.0
     - 0.0
     - 0.0
+  char_anchor: center
   char_display: all
   char_spacing_cell_width_ratio: 0.5
   char_spacing_font_size_ratio: 0.5
   char_spacing_strategy: cell_width_relative
   colorParamInput: none
   cursor_drag_rgba:
-  - 0
+  - 0.0
   - 0.5
-  - 1
+  - 1.0
   - 0.7
   cursor_move_rgba:
   - 0.75
@@ -414,9 +418,9 @@ style_configs:
   - 0.92
   - 0.7
   cursor_other_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.7
   cursor_rgba:
   - 0.3
@@ -432,11 +436,20 @@ style_configs:
   font_family: '[Apple System Font]'
   font_size_multiplier: 0.4
   font_weight: 500
+  free_mode_indicator_offset_x: 20.0
+  free_mode_indicator_offset_y: 20.0
+  free_mode_indicator_rgba:
+  - 0.3
+  - 0.42
+  - 0.58
+  - 0.9
+  free_mode_indicator_size: 10
+  free_mode_status_display: both
   grid_line_style: lines
   grid_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.5
   highlight_animation_ms: 0
   highlight_rgba:
@@ -448,20 +461,20 @@ style_configs:
   show_initial_highlight: false
   subgrid_font_size_multiplier: 0.75
   subgrid_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.5
   subgrid_text_rgba:
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
   - 0.5
   text_rgba:
-  - 1
-  - 1
-  - 1
-  - 1
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   text_shadow_blur_radius: 4.0
   text_shadow_offset:
   - 0.0
@@ -470,7 +483,8 @@ style_configs:
   - 0.02
   - 0.04
   - 0.06
-  - 1
+  - 1.0
   text_y_offset: 0.0
+  toast_opacity: 0.5
   use_bg_color_transforms: false
   window_opacity: 1.0
