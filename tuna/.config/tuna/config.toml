@@ -1,0 +1,60 @@
+schemaVersion = 1
+
+[[comboMode.bindings]]
+iconPath = '~/.config/tuna/assets/downloads.png'
+key = 'd'
+url = 'tuna://run/text.open%2520~%252FDownloads/Run%20Text%20as%20Shell%20Command'
+
+[[comboMode.bindings]]
+iconPath = '/Applications/Google Chrome.app'
+key = 'c'
+url = 'tuna://run/text.open%2520-na%2520%2522Google%2520Chrome%2522%2520--args%2520%255C%250A%2520%2520--new-window/Run%20Text%20as%20Shell%20Command'
+
+[[comboMode.bindings]]
+iconPath = '/Applications/Google Chrome.app'
+key = 'w'
+url = 'tuna://run/text.open%2520-na%2520%2522Google%2520Chrome%2522%2520--args%2520--profile-directory=%2522Profile%25201%2522%2520https:%252F%252Fchatgpt.com/Run%20Text%20as%20Shell%20Command'
+
+[[comboMode.bindings]]
+iconPath = '/Applications/Google Chrome.app'
+key = 'q'
+url = 'tuna://run/text.open%2520-a%2520%2522Google%2520Chrome%2522%2520%2522https:%252F%252Fgithub.com%252Fthegeorgenikhil%252F.dotfiles%252Fblob%252Fmain%252FQUICK-REFERENCE.md%2522/Run%20Text%20as%20Shell%20Command'
+
+[[comboMode.bindings]]
+iconPath = '~/.config/tuna/assets/whatsapp.png'
+key = 'p'
+url = 'tuna://run/text.open%2520-na%2520%2522Google%2520Chrome%2522%2520--args%2520%255C%250A%2520%2520--new-window%2520%255C%250A%2520%2520%2522https:%252F%252Fweb.whatsapp.com%2522%250A%250Asleep%25202%250A%250Aaerospace%2520move-node-to-workspace%2520P%250Aaerospace%2520workspace%2520P/Run%20Text%20as%20Shell%20Command'
+
+[[comboMode.bindings]]
+iconPath = '/Applications/Ghostty.app'
+key = 'g'
+url = 'tuna://run/text.open%2520-na%2520Ghostty/Run%20Text%20as%20Shell%20Command'
+
+[hotkeys]
+custom = []
+
+    [hotkeys.app.activate]
+    carbonKeyCode = 49
+    carbonModifiers = 256
+
+    [hotkeys.app.comboMode]
+    carbonKeyCode = 49
+    carbonModifiers = 2560
+
+    [hotkeys.app.textMode]
+    carbonKeyCode = 49
+    carbonModifiers = 768
+
+[settings]
+appPresentationMode = 'never'
+backspaceBehavior = 'deleteCharacters'
+comboModeBackspaceBehavior = 'stepBack'
+shortcutDisplayUsesHyperSymbol = false
+themeIdentifier = 'com.brnbw.tuna.themes.default'
+typingTimeoutDuration = 2.5000000000000004
+
+[[catalogSettings]]
+catalogIdentifier = 'com.brnbw.tuna.themes.default'
+
+    [catalogSettings.values]
+    ThemeTint = 'system'
