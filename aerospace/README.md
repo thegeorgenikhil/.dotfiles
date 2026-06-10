@@ -62,13 +62,13 @@ Run `aerospace list-monitors` to get the exact monitor names to use in the confi
 
 | Workspace | Monitor                 | Typical Use         |
 | --------- | ----------------------- | ------------------- |
-| 1         | DELL P2422HE            | Chrome              |
-| 2         | DELL P2422HE            | Chrome              |
+| 1         | LG HDR 4K               | Chrome              |
+| 2         | LG HDR 4K               | Chrome              |
 | 3         | Built-in Retina Display | Chrome              |
-| E         | DELL P2422HE            | Editor (Cursor/Zed) |
-| G         | DELL P2422HE            | Ghostty             |
-| O         | DELL P2422HE            | Scratch             |
-| T         | DELL P2422HE            | Telegram            |
+| E         | LG HDR 4K               | Editor (Cursor/Zed) |
+| G         | LG HDR 4K               | Ghostty             |
+| O         | LG HDR 4K               | Scratch             |
+| T         | LG HDR 4K               | Telegram            |
 | M         | Built-in Retina Display | Spotify             |
 | P         | Built-in Retina Display | Personal            |
 
