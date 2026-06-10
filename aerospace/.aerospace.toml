@@ -298,12 +298,12 @@ run= [
 
 # [CUSTOM] Assign workspaces to specific monitors
 [workspace-to-monitor-force-assignment]
-1 = 'DELL P2422HE'
-2 = 'DELL P2422HE'
+1 = 'LG HDR 4K'
+2 = 'LG HDR 4K'
 3 = 'Built-in Retina Display'
-E = 'DELL P2422HE'
-G = 'DELL P2422HE'
+E = 'LG HDR 4K'
+G = 'LG HDR 4K'
 M = 'Built-in Retina Display'
-O = 'DELL P2422HE'
+O = 'LG HDR 4K'
 P = 'Built-in Retina Display'
-T = 'DELL P2422HE'
+T = 'LG HDR 4K'
