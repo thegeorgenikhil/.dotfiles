@@ -322,10 +322,10 @@ keymaps:
     middle click: null
     middle mouse button: E
     middle mouse button (w/o overlay): null
-    move down: K
-    move left: J
+    move down: J
+    move left: H
     move right: L
-    move up: I
+    move up: K
     release hold/drag: Escape
     repeat last mouse action: null
     right click: null
