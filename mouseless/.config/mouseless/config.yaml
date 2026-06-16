@@ -303,7 +303,7 @@ keymaps:
     hold for drag: CommandLeft
     hold for forward button: null
     hold for free mode: null
-    hold for middle button: null
+    hold for middle button: OptionRight
     hold for move: OptionLeft
     hold for right button: CommandRight
     hold for speed decrease: A
@@ -353,7 +353,7 @@ keymaps:
     toggle overlay: null
     toggle overlay lock: null
     undo last key: Backspace
-    wheel down: ','
+    wheel down: M
     wheel down fast: null
     wheel left: .
     wheel left fast: null
@@ -367,7 +367,7 @@ keymaps:
     wheel step right large: null
     wheel step up: null
     wheel step up large: null
-    wheel up: M
+    wheel up: ','
     wheel up fast: null
   name: mac
 log_level: info
