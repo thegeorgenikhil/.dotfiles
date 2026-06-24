@@ -46,13 +46,13 @@ This is the AeroSpace configuration for my macOS setup.
 
 The following applications are assigned to specific workspaces upon launch:
 
-| Application(s) | Workspace |
-| -------------- | --------- |
-| Google Chrome  | 1         |
-| Cursor / Zed   | E         |
-| Ghostty        | G         |
-| Spotify        | M         |
-| Telegram       | T         |
+| Application(s)             | Workspace |
+| -------------------------- | --------- |
+| Google Chrome              | 1         |
+| Cursor / Zed / Zed Preview | E         |
+| Ghostty                    | G         |
+| Spotify                    | M         |
+| Telegram                   | T         |
 
 ## Workspace → Monitor Assignment
 

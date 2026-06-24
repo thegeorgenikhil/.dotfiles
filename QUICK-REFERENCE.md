@@ -34,29 +34,29 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 
 ### Automatic Window → Workspace Assignment
 
-| Application(s) | Workspace |
-| -------------- | --------- |
-| Google Chrome  | 1         |
-| Cursor / Zed   | E         |
-| Ghostty        | G         |
-| Spotify        | M         |
-| Telegram       | T         |
+| Application(s)             | Workspace |
+| -------------------------- | --------- |
+| Google Chrome              | 1         |
+| Cursor / Zed / Zed Preview | E         |
+| Ghostty                    | G         |
+| Spotify                    | M         |
+| Telegram                   | T         |
 
 ### Workspace → Monitor Assignment
 
 > Run `aerospace list-monitors` to get the exact monitor names to use in the config.
 
-| Workspace | Monitor                 | Typical Use         |
-| --------- | ----------------------- | ------------------- |
-| 1         | LG HDR 4K               | Chrome              |
-| 2         | LG HDR 4K               | Chrome              |
-| 3         | Built-in Retina Display | Chrome              |
-| E         | LG HDR 4K               | Editor (Cursor/Zed) |
-| G         | LG HDR 4K               | Ghostty             |
-| O         | LG HDR 4K               | Scratch             |
-| T         | LG HDR 4K               | Telegram            |
-| M         | Built-in Retina Display | Spotify             |
-| P         | Built-in Retina Display | Personal            |
+| Workspace | Monitor                 | Typical Use                     |
+| --------- | ----------------------- | ------------------------------- |
+| 1         | LG HDR 4K               | Chrome                          |
+| 2         | LG HDR 4K               | Chrome                          |
+| 3         | Built-in Retina Display | Chrome                          |
+| E         | LG HDR 4K               | Editor (Cursor/Zed/Zed Preview) |
+| G         | LG HDR 4K               | Ghostty                         |
+| O         | LG HDR 4K               | Scratch                         |
+| T         | LG HDR 4K               | Telegram                        |
+| M         | Built-in Retina Display | Spotify                         |
+| P         | Built-in Retina Display | Personal                        |
 
 > **Note:** When only the built-in display is connected, AeroSpace falls back and shows all workspaces on that single monitor.
 
@@ -68,70 +68,70 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 
 ### Modes & overlay
 
-| Keybinding            | Action                                  |
-| --------------------- | --------------------------------------- |
-| `⌘ Left` (tap)        | Show overlay                            |
-| `Esc`                 | Hide overlay / close UI element         |
-| `Option Left` (tap)   | Toggle free mode (relative movement)    |
-| `Tab` (overlay up)    | Edit config                             |
-| `Shift Left` / `Shift Right` (overlay up) | Move overlay to prev / next monitor |
+| Keybinding                                | Action                               |
+| ----------------------------------------- | ------------------------------------ |
+| `⌘ Left` (tap)                            | Show overlay                         |
+| `Esc`                                     | Hide overlay / close UI element      |
+| `Option Left` (tap)                       | Toggle free mode (relative movement) |
+| `Tab` (overlay up)                        | Edit config                          |
+| `Shift Left` / `Shift Right` (overlay up) | Move overlay to prev / next monitor  |
 
 ### Overlay mode (clicking)
 
-| Keybinding                       | Action                                    |
-| -------------------------------- | ----------------------------------------- |
-| Type 2 cell chars, then `Space`  | Click at cell center                      |
-| Type 2 cell chars, then subgrid char | Click at sub-cell                     |
-| `Space` (during selection)       | Click at virtual cursor                   |
-| `Backspace`                      | Undo last key (go back one level)         |
-| Hold `Shift` (or `⌘ Right`) + final key | Right click                        |
-| Repeat final key                 | Double / triple click                     |
-| Hold `Option Left` (`⌘ Left`) + final key | Begin click-and-drag             |
-| `Option Left` (tap, overlay up)  | Move cursor (no click)                    |
+| Keybinding                                | Action                            |
+| ----------------------------------------- | --------------------------------- |
+| Type 2 cell chars, then `Space`           | Click at cell center              |
+| Type 2 cell chars, then subgrid char      | Click at sub-cell                 |
+| `Space` (during selection)                | Click at virtual cursor           |
+| `Backspace`                               | Undo last key (go back one level) |
+| Hold `Shift` (or `⌘ Right`) + final key   | Right click                       |
+| Repeat final key                          | Double / triple click             |
+| Hold `Option Left` (`⌘ Left`) + final key | Begin click-and-drag              |
+| `Option Left` (tap, overlay up)           | Move cursor (no click)            |
 
 ### Free mode (relative movement)
 
-| Keybinding              | Action                                            |
-| ----------------------- | ------------------------------------------------- |
-| `I` / `K` / `J` / `L`   | Move up / down / left / right                     |
-| `Space`                 | Left click                                        |
-| `R` / `E`               | Right click / middle click                        |
-| `Q` / `W`               | Back / forward click                              |
-| `M` / `,`               | Scroll up / down                                  |
-| `.` / `/`               | Scroll left / right                               |
-| `S` / `D` / `F` (hold)  | Increase movement / scroll speed (stack for more) |
-| `A` (hold)              | Decrease speed                                    |
+| Keybinding             | Action                                            |
+| ---------------------- | ------------------------------------------------- |
+| `I` / `K` / `J` / `L`  | Move up / down / left / right                     |
+| `Space`                | Left click                                        |
+| `R` / `E`              | Right click / middle click                        |
+| `Q` / `W`              | Back / forward click                              |
+| `M` / `,`              | Scroll up / down                                  |
+| `.` / `/`              | Scroll left / right                               |
+| `S` / `D` / `F` (hold) | Increase movement / scroll speed (stack for more) |
+| `A` (hold)             | Decrease speed                                    |
 
 ---
 
 ## Ghostty
 
-| Keybinding              | Action                          |
-| ----------------------- | ------------------------------- |
-| `⌘ C` / `⌘ V`           | Copy / paste                    |
-| `⌘ T`                   | New tab                         |
-| `⌘ W`                   | Close tab / split (surface)     |
-| `⌘ Shift + [` / `]`     | Previous / next tab             |
-| `⌘ 1`…`8`               | Go to tab N                     |
-| `⌘ D`                   | New split (right)               |
-| `⌘ Shift + D`           | New split (down)                |
-| `⌘ [` / `]`             | Focus previous / next split     |
-| `⌘ Alt + ←↓↑→`          | Focus split by direction        |
-| `⌘ =` / `⌘ -`           | Increase / decrease font size   |
-| `⌘ 0`                   | Reset font size                 |
-| `⌘ K`                   | Clear screen                    |
-| `⌘ Shift + ,`           | Reload config                   |
+| Keybinding          | Action                        |
+| ------------------- | ----------------------------- |
+| `⌘ C` / `⌘ V`       | Copy / paste                  |
+| `⌘ T`               | New tab                       |
+| `⌘ W`               | Close tab / split (surface)   |
+| `⌘ Shift + [` / `]` | Previous / next tab           |
+| `⌘ 1`…`8`           | Go to tab N                   |
+| `⌘ D`               | New split (right)             |
+| `⌘ Shift + D`       | New split (down)              |
+| `⌘ [` / `]`         | Focus previous / next split   |
+| `⌘ Alt + ←↓↑→`      | Focus split by direction      |
+| `⌘ =` / `⌘ -`       | Increase / decrease font size |
+| `⌘ 0`               | Reset font size               |
+| `⌘ K`               | Clear screen                  |
+| `⌘ Shift + ,`       | Reload config                 |
 
 ---
 
 ## Hunk
 
-| Keybinding   | Action                  |
-| ------------ | ----------------------- |
-| `[` / `]`    | Previous / next hunk    |
+| Keybinding      | Action                     |
+| --------------- | -------------------------- |
+| `[` / `]`       | Previous / next hunk       |
 | `1` / `2` / `0` | View: split / stack / auto |
-| `s`          | Toggle sidebar          |
-| `/`          | Focus file filter       |
+| `s`             | Toggle sidebar             |
+| `/`             | Focus file filter          |
 
 ---
 
@@ -139,6 +139,6 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 
 > Defined in [`zsh/.zshrc`](zsh/.zshrc).
 
-| Keybinding   | Action                                          |
-| ------------ | ----------------------------------------------- |
+| Keybinding      | Action                                                     |
+| --------------- | ---------------------------------------------------------- |
 | `Ctrl-X Ctrl-E` | Edit the current command line in Vim (`edit-command-line`) |

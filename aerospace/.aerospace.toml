@@ -272,6 +272,13 @@ run= [
     "move-node-to-workspace E",
 ]
 
+# [CUSTOM] Automatically assign Zed Preview window to workspace E upon launch
+[[on-window-detected]]
+if.app-id="dev.zed.Zed-Preview"
+run= [
+    "move-node-to-workspace E",
+]
+
 # [CUSTOM] Automatically assign Ghostty window to workspace G upon launch
 [[on-window-detected]]
 if.app-id="com.mitchellh.ghostty"
