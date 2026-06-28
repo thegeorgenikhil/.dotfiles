@@ -29,6 +29,7 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 | Keybinding        | Action                              |
 | ----------------- | ----------------------------------- |
 | `alt + f`         | Toggle focused window to fullscreen |
+| `alt + shift + 2` | Launch Slack app                    |
 | `alt + shift + m` | Launch Spotify app                  |
 | `alt + shift + t` | Launch Telegram app                 |
 
@@ -37,6 +38,7 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 | Application(s)             | Workspace |
 | -------------------------- | --------- |
 | Google Chrome              | A         |
+| Slack                      | 2         |
 | Cursor / Zed / Zed Preview | E         |
 | Ghostty                    | G         |
 | Spotify                    | M         |
@@ -49,7 +51,7 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 | Workspace | Monitor                 | Typical Use                     |
 | --------- | ----------------------- | ------------------------------- |
 | 1         | LG HDR 4K               | Standby                         |
-| 2         | LG HDR 4K               | Standby                         |
+| 2         | LG HDR 4K               | Slack                           |
 | 3         | Built-in Retina Display | Standby                         |
 | A         | LG HDR 4K               | Main Chrome                     |
 | E         | LG HDR 4K               | Editor (Cursor/Zed/Zed Preview) |

@@ -47,7 +47,7 @@ automatically-unhide-macos-hidden-apps = false
 # Fallback value (if you omit the key): persistent-workspaces = []
 persistent-workspaces = [
     "1", # Standby
-    "2", # Standby
+    "2", # Slack
     "3", # Standby
     # "4",
     # "5",
@@ -161,7 +161,7 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     alt-1 = 'workspace 1' # Standby
-    alt-2 = 'workspace 2' # Standby
+    alt-2 = 'workspace 2' # Slack
     alt-3 = 'workspace 3' # Standby
     # alt-4 = 'workspace 4'
     # alt-5 = 'workspace 5'
@@ -194,7 +194,7 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
-    alt-shift-2 = 'move-node-to-workspace 2'
+    alt-shift-2 = 'exec-and-forget open -a /Applications/Slack.app'
     alt-shift-3 = 'move-node-to-workspace 3'
     # alt-shift-4 = 'move-node-to-workspace 4'
     # alt-shift-5 = 'move-node-to-workspace 5'
@@ -251,6 +251,13 @@ on-mode-changed = []
     alt-shift-j = ['join-with down', 'mode main']
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
+
+# [CUSTOM] Automatically assign Slack window to workspace 2 upon launch
+[[on-window-detected]]
+if.app-id="com.tinyspeck.slackmacgap"
+run= [
+    "move-node-to-workspace 2",
+]
 
 # [CUSTOM] Automatically assign Chrome window to workspace A upon launch
 [[on-window-detected]]

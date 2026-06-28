@@ -33,13 +33,14 @@ This is the AeroSpace configuration for my macOS setup.
 | `service mode → f`                  | Toggle focused window floating / tiling                    |
 | `service mode → esc`                | Reload config and exit service mode                        |
 
-> **Note:** `alt + shift + m` and `t` will launch Spotify and Telegram.
+> **Note:** `alt + shift + 2`, `m`, and `t` will launch Slack, Spotify, and Telegram.
 
 ## Custom Keybindings
 
 | Keybinding        | Action                              |
 | ----------------- | ----------------------------------- |
 | `alt + f`         | Toggle focused window to fullscreen |
+| `alt + shift + 2` | Launch Slack app                    |
 | `alt + shift + m` | Launch Spotify app                  |
 | `alt + shift + t` | Launch Telegram app                 |
 
@@ -50,6 +51,7 @@ The following applications are assigned to specific workspaces upon launch:
 | Application(s)             | Workspace |
 | -------------------------- | --------- |
 | Google Chrome              | A         |
+| Slack                      | 2         |
 | Cursor / Zed / Zed Preview | E         |
 | Ghostty                    | G         |
 | Spotify                    | M         |
@@ -64,7 +66,7 @@ Run `aerospace list-monitors` to get the exact monitor names to use in the confi
 | Workspace | Monitor                 | Typical Use         |
 | --------- | ----------------------- | ------------------- |
 | 1         | LG HDR 4K               | Standby             |
-| 2         | LG HDR 4K               | Standby             |
+| 2         | LG HDR 4K               | Slack               |
 | 3         | Built-in Retina Display | Standby             |
 | A         | LG HDR 4K               | Main Chrome         |
 | E         | LG HDR 4K               | Editor (Cursor/Zed) |
