@@ -46,16 +46,17 @@ automatically-unhide-macos-hidden-apps = false
 # This config version is only available since 'config-version = 2'
 # Fallback value (if you omit the key): persistent-workspaces = []
 persistent-workspaces = [
-    "1",
-    "2",
-    "3",
+    "1", # Standby
+    "2", # Standby
+    "3", # Standby
     # "4",
     # "5",
     # "6",
     # "7",
     # "8",
     # "9",
-    # "A",
+    "A", # Main Chrome
+
     # "B",
     # "C",
     # "D",
@@ -159,16 +160,16 @@ on-mode-changed = []
     alt-equal = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    alt-1 = 'workspace 1' # Chrome 1
-    alt-2 = 'workspace 2' # Chrome 2
-    alt-3 = 'workspace 3' # Chrome 3
+    alt-1 = 'workspace 1' # Standby
+    alt-2 = 'workspace 2' # Standby
+    alt-3 = 'workspace 3' # Standby
     # alt-4 = 'workspace 4'
     # alt-5 = 'workspace 5'
     # alt-6 = 'workspace 6'
     # alt-7 = 'workspace 7'
     # alt-8 = 'workspace 8'
     # alt-9 = 'workspace 9'
-    # alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
+    alt-a = 'workspace A' # Main Chrome
     # alt-b = 'workspace B'
     # alt-c = 'workspace C'
     # alt-d = 'workspace D'
@@ -201,7 +202,7 @@ on-mode-changed = []
     # alt-shift-7 = 'move-node-to-workspace 7'
     # alt-shift-8 = 'move-node-to-workspace 8'
     # alt-shift-9 = 'move-node-to-workspace 9'
-    # alt-shift-a = 'move-node-to-workspace A'
+    alt-shift-a = 'move-node-to-workspace A'
     # alt-shift-b = 'move-node-to-workspace B'
     # alt-shift-c = 'move-node-to-workspace C'
     # alt-shift-d = 'move-node-to-workspace D'
@@ -251,11 +252,11 @@ on-mode-changed = []
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
 
-# [CUSTOM] Automatically assign Chrome window to workspace 1 upon launch
+# [CUSTOM] Automatically assign Chrome window to workspace A upon launch
 [[on-window-detected]]
 if.app-id="com.google.Chrome"
 run= [
-    "move-node-to-workspace 1",
+    "move-node-to-workspace A",
 ]
 
 # [CUSTOM] Automatically assign Cursor window to workspace E upon launch
@@ -308,6 +309,7 @@ run= [
 1 = 'LG HDR 4K'
 2 = 'LG HDR 4K'
 3 = 'Built-in Retina Display'
+A = 'LG HDR 4K'
 E = 'LG HDR 4K'
 G = 'LG HDR 4K'
 M = 'Built-in Retina Display'

@@ -36,7 +36,7 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 
 | Application(s)             | Workspace |
 | -------------------------- | --------- |
-| Google Chrome              | 1         |
+| Google Chrome              | A         |
 | Cursor / Zed / Zed Preview | E         |
 | Ghostty                    | G         |
 | Spotify                    | M         |
@@ -48,9 +48,10 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 
 | Workspace | Monitor                 | Typical Use                     |
 | --------- | ----------------------- | ------------------------------- |
-| 1         | LG HDR 4K               | Chrome                          |
-| 2         | LG HDR 4K               | Chrome                          |
-| 3         | Built-in Retina Display | Chrome                          |
+| 1         | LG HDR 4K               | Standby                         |
+| 2         | LG HDR 4K               | Standby                         |
+| 3         | Built-in Retina Display | Standby                         |
+| A         | LG HDR 4K               | Main Chrome                     |
 | E         | LG HDR 4K               | Editor (Cursor/Zed/Zed Preview) |
 | G         | LG HDR 4K               | Ghostty                         |
 | O         | LG HDR 4K               | Scratch                         |
