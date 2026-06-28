@@ -137,6 +137,9 @@ export FZF_DEFAULT_OPTS="
 # Aliases
 # =============================================================================
 
+# MySQL
+alias mysqlj='mysql -u root -p'
+
 # Claude Code
 alias cc='claude'
 
@@ -149,7 +152,7 @@ alias h='hunk'
 # Zoxide
 alias j='z'
 alias jj='zi'
- 
+
 # Work aliases (separate file, committed encrypted via git-crypt; run `git-crypt unlock` after cloning)
 [[ -f $HOME/.work_aliases.zsh ]] && source $HOME/.work_aliases.zsh
 
