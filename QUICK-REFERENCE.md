@@ -99,7 +99,7 @@ A personal cheat sheet of the commands and keybindings I reach for most across m
 | `Space`                | Left click                                        |
 | `R` / `E`              | Right click / middle click                        |
 | `Q` / `W`              | Back / forward click                              |
-| `M` / `,`              | Scroll up / down                                  |
+| `,` / `M`              | Scroll up / down                                  |
 | `.` / `/`              | Scroll left / right                               |
 | `S` / `D` / `F` (hold) | Increase movement / scroll speed (stack for more) |
 | `A` (hold)             | Decrease speed                                    |
