@@ -7,7 +7,6 @@ This is the AeroSpace configuration for my macOS setup.
 - 1
 - 2
 - 3
-- A
 - E
 - G
 - M
@@ -50,7 +49,7 @@ The following applications are assigned to specific workspaces upon launch:
 
 | Application(s)             | Workspace |
 | -------------------------- | --------- |
-| Google Chrome              | A         |
+| Google Chrome              | 1         |
 | Slack                      | 2         |
 | Cursor / Zed / Zed Preview | E         |
 | Ghostty                    | G         |
@@ -65,10 +64,9 @@ Run `aerospace list-monitors` to get the exact monitor names to use in the confi
 
 | Workspace | Monitor                 | Typical Use         |
 | --------- | ----------------------- | ------------------- |
-| 1         | LG HDR 4K               | Standby             |
+| 1         | LG HDR 4K               | Main Chrome         |
 | 2         | LG HDR 4K               | Slack               |
 | 3         | Built-in Retina Display | Standby             |
-| A         | LG HDR 4K               | Main Chrome         |
 | E         | LG HDR 4K               | Editor (Cursor/Zed) |
 | G         | LG HDR 4K               | Ghostty             |
 | O         | LG HDR 4K               | Scratch             |
